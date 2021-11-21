@@ -4,120 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub</title>
+    <title>Form</title>
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <style>
-.container-fluid{
-    height: 100%;
-    background-image: linear-gradient(to right , rgb(5, 5, 54),rgb(35, 35, 145));
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 10px;
-    
-}
-.col-12{
-    height: 30%;
-    background-color: rgb(73, 72, 72);
-    
-    color: white;
+.container-fluid {
+    width: 70%;
+    height: 200%;
+    border:5px solid black;
+    margin-top: 30px;
+    background-image: linear-gradient(red,pink);
 }
 
-.box1{
+h1 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+
+.row {
     width: 80%;
-    height: 700px;
-    background-color: gray;
-    border-radius: 30px;
-    margin-top: 100px;
-
-}
-/* #search{
-    width: 50%;
+    height: 380px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+    background-image: linear-gradient(gray,pink);
     
-    background-color: gray;
-} */
-#search{
-    width: 140%;
-    height: 50px;
-    background-color:whitesmoke;
-    margin-top: 120px;
-    margin-left: 50px;
-    border-radius: 30px;
-    text-align: center;
+}
+
+.tiledBackground {
+     background-image: url(images.jpg);
+    background-size: 290px 300px;
+    width: 100%px;
+     height: 80%;
+     margin-left: 50px;
+     border: 2px solid;
+    margin-top: 23px;
+            
+}
+.name{
+     margin-left: 30px;
+}
+#name{
     font-weight: bolder;
-
-        
+}       
+    
+#email{
+    font-weight: bolder;
 }
-.box3{
-    width: 100%;
-    height: 170px;
-    border-radius: 20px;
-    background-color: gray;
-    margin-top: 80px;
+#phonenumber{
+    font-weight: bolder;
 }
-.box4{
-    width: 100%;
-    height: 170px;
-    border-radius: 20px;
-    background-color: gray;
-    margin-top: 80px;
-
+#seats{
+    font-weight: bolder;
 }
-.box5{
-    width: 100%;
-    height: 170px;
-    border-radius: 20px;
-    background-color: gray;
-    margin-top: 80px;
+#number{
+    font-weight: bolder;
 }
-.box6{
-    width: 120%;
-    height: 200px;
-    background-color:gray;
-    border-radius: 20px;
-    margin-top: 70px;
-
+#submit{
+    background-color: tomato;
+    font-weight: 800;
 }
-
+#cancel{
+    background-color: yellow;
+    font-weight: 800;
+}
 </style>
 <body>
     
-    <div class="container-fluid">
-       
-    
 
+    <div class="container-fluid">
+        <h1><b>Event 1</b></h1>
+        <h4>Number available seats:23</h4>
         <div class="row">
-            <div class="col-12">GitHub</div>
             <div class="col-4">
-                <div class="box1"></div>
+                <div class="tiledBackground">
+                </div>
             </div>
             <div class="col-8">
-                <div class="row">
-                    <div class="col-6">
-                            <input type="text" name="search" id="search" placeholder="search">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="box3"></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box4"></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box5"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="box6"></div>
-                    </div>
-                </div>
+                
+                <form style="text-align: center;"> 
+                    <br>
+                    <label for="Name" id="name">Name:</label>
+                    <input type="text" placeholder="YourName" required><br><br>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="email" placeholder="Email"><br><br>
+
+                    <label for="Phone Number">Phone Number:</label>
+                    <input type="text" name="Phone Number" id="phonenumber"placeholder="phonenumber" ><br><br>
+
+                    <label for="Number of seats">Number of seats:</label>
+                    <input type="number" name="Number of seats" id="seats"placeholder = "number of seates"><br><br>
+
+                    <label for="Number of Attende 2">Number of Attende 2:</label>
+                    <input type="text" name="Number of Attende 2" id="number"placeholder = "Number of Attende"><hr>
+
+                    <input type="submit" value="submit" id="submit">
+                    <input type="submit" value="cancel"id="cancel">
+
+
+                </form>
             </div>
         </div>
+
     </div>
 
-    
+
 </body>
 </html>
